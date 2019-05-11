@@ -1,0 +1,2024 @@
+/* Your CSS codes here */
+.pleca-logos {
+    padding: 0;
+}
+
+.acesso {
+    width: 300px;
+    border-radius: 8px;
+}
+
+.tb-social .brand-bg a img {
+    max-width: 26px;
+    height: auto;
+}
+
+/*************************/
+/* Header two            */
+/* Logo & Navigation bar */
+/*************************/
+.header-2 .logo h1 a i {
+    color: #ab0a3c;
+}
+
+.header-2 .navy ul > li.has-sub > a:after {
+    color: #ab0a3c;
+}
+
+.header-2 .navy > ul > li > ul {
+    border-top: none;
+    border-bottom: none;
+    border: #DEDEDE solid 1px;
+    border-radius: 4px;
+}
+
+.header-2 .navy ul ul ul {
+    border-top: 2px solid #ab0a3c;
+    border-bottom: 2px solid #ab0a3c;
+}
+
+.header-2 .navy #menu-button {
+    background: #ab0a3c;
+}
+
+.header-2 .navy ul .submenu-button:after {
+    color: #ab0a3c;
+}
+
+/* Header two 	   */
+/* Logo            */
+/* Navigation menu */
+.header-2 {
+    z-index: 10;
+    background: none;
+    padding: 0;
+    -webkit-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.2);
+    border-bottom: #DEDEDE solid 1px;
+    position: relative;
+}
+
+.header-2 .pleca-uno {
+    border-bottom: #DEDEDE solid 1px;
+    background: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header-2 .logo {
+    margin: 10px 0px 25px 0px;
+}
+
+.header-2 .logo h1 {
+    font-weight: 600;
+}
+
+.header-2 .logo h1 a {
+    color: #808080;
+}
+
+.header-2 .logo h1 a:hover {
+    color: #666666;
+}
+
+@media ( max-width: 785px) {
+    .header-2 .logo h1 {
+        text-align: center;
+    }
+}
+
+/* Header 2 Navigation menu */
+.header-2 .navy ul, .header-2 .navy ul li, .header-2 .navy ul li a,
+.header-2 .navy #menu-button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    display: block;
+    position: relative;
+    z-index: 10;
+}
+
+.header-2 .navy #menu-button {
+    display: none;
+}
+
+.header-2 .pleca-menu {
+    background-color: #ECECEC;
+    background: rgba(255, 255, 255, 0.9);
+    border-top: #ffffff solid 2px;
+}
+
+.header-2 .pleca-interior {
+    background: rgba(241, 241, 241, 1.0);
+    border-top: #ffffff solid 1px;
+}
+
+.header-2 .navy {
+    width: auto;
+}
+
+.header-2 .navy > ul > li {
+    float: left;
+}
+
+.header-2 .navy > ul > li > a {
+    padding: 11px 15px;
+    font-size: 16px;
+    line-height: 31px;
+    color: #4b4b4b;
+    font-weight: 300;
+}
+
+.header-2 .navy > ul > li:hover > a, .header-2 .navy > ul > li > a:hover {
+    -webkit-box-shadow: 0px 9px 14px 1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 9px 14px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 9px 14px 1px rgba(0, 0, 0, 0.4);
+}
+
+.header-2 .navy > ul > li > a:active, .header-2 .navy > ul > li .active, .header-2 .navy > ul > li .active:hover {
+    color: #fff;
+    background-color: #ab0a3c;
+    font-weight: 700;
+    -webkit-box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.header-2 .navy > ul > li .active:hover {
+    color: #fff;
+}
+
+.header-2 .navy ul > li.has-sub > a:after {
+
+}
+
+.header-2 .navy ul ul {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+    transition: bottom .4s ease, opacity .3s ease;
+}
+
+.header-2 .navy > ul > li > ul {
+    top: 100px;
+    background: #f3f3f3;
+    padding: 5px 0px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.header-2 .navy > ul > li:hover > ul {
+    left: auto;
+    top: 50px;
+    opacity: 1;
+}
+
+.header-2 .navy ul ul ul {
+    top: 10px;
+    padding: 0;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.header-2 .navy ul ul > li:hover > ul {
+    top: 0;
+    left: 170px;
+    opacity: 1;
+    background: #fff;
+}
+
+.header-2 .navy ul ul li a {
+    width: 225px;
+    padding: 4px 20px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #4b4b4b;
+    border-bottom: #F6F6F6 solid 1px;
+    border-top: #E6E6E6 solid 1px;
+}
+
+.header-2 .navy ul ul li:hover > a, .header-2 .navy ul ul li > a:hover {
+    color: #a70d3d;
+    font-weight: 700;
+    background: #e8e8e8;
+}
+
+.header-2 .navy ul li ul li img {
+    padding: 0;
+    margin: 0;
+}
+
+.header-2 .navy ul ul > li.has-sub > a:after {
+    content: "\f105";
+    font-family: "FontAwesome";
+    margin-left: 7px;
+    font-weight: 400;
+    float: right;
+    font-size: 14px;
+}
+
+@media ( max-width: 985px) {
+    .separador {
+        display: none;
+    }
+
+    .header-2 .navy {
+        max-width: 400px;
+        margin: 0px auto;
+        margin-bottom: 10px;
+    }
+
+    .header-2 .navy ul, .header-2 .navy ul ul, .header-2 .navy ul ul ul,
+    .header-2 .navy > ul, .header-2 .navy > ul > li > ul, .header-2 .navy > ul > li:hover > ul,
+    .header-2 .navy ul ul li:hover > ul, .header-2 .navy ul ul ul li:hover > ul {
+        position: relative;
+        left: 0;
+        right: auto;
+        top: 0;
+        width: 100%;
+        display: none;
+        padding: 0;
+        opacity: 1;
+        text-align: left;
+        box-shadow: none;
+    }
+
+    .header-2 .navy > ul > li {
+        border: 1px solid #eee;
+        border-bottom: 0px;
+    }
+
+    .header-2 .navy ul li {
+        width: 100%;
+        border-top: 1px solid #eee;
+    }
+
+    .header-2 .navy ul li:last-child {
+        border-bottom: 1px solid #eee;
+    }
+
+    .header-2 .navy > ul > li > ul, .header-2 .navy ul ul ul {
+        border-top: 1px solid #eee !important;
+        border-bottom: 1px solid #eee !important;
+    }
+
+    .header-2 .navy ul li a {
+        padding: 10px 20px;
+    }
+
+    .header-2 .navy ul ul li a {
+        width: 100%;
+        padding: 10px 20px 10px 35px;
+    }
+
+    .header-2 .navy ul ul ul li a {
+        padding: 10px 20px 10px 50px;
+    }
+
+    .header-2 .navy ul ul ul ul li a {
+        padding: 10px 20px 10px 65px;
+    }
+
+    .header-2 .navy > ul > li.has-sub > a:after, .header-2 .navy ul ul li.has-sub > a:after {
+        display: none;
+    }
+
+    .header-2 .navy #menu-button {
+        position: relative;
+        display: block;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 13px;
+        color: #fff;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .header-2 .navy #menu-button:after {
+        content: "\f0c9";
+        font-family: "FontAwesome";
+        margin-left: 7px;
+        font-weight: 400;
+        float: right;
+        font-size: 14px;
+    }
+
+    .header-2 .navy .submenu-button {
+        position: absolute;
+        right: 0;
+        display: block;
+        width: 50px;
+        height: 50px;
+        z-index: 12;
+        cursor: pointer;
+        border-left: 1px solid #eee;
+    }
+
+    .header-2 .navy ul ul .submenu-button {
+        height: 50px;
+    }
+
+    .header-2 .navy ul .submenu-button:after {
+        content: "\f107";
+        font-family: "FontAwesome";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 50px;
+        text-align: center;
+        display: block;
+    }
+}
+
+@media ( min-width: 986px) {
+    .header-2 .navy ul {
+        display: block !important;
+    }
+}
+
+/* Header 2 search */
+.header-2 .head-search {
+    position: relative;
+    top: 20px;
+}
+
+.header-2 .head-search .b-dropdown-block {
+    padding: 7px;
+    border: 1px solid #ddd;
+    width: 250px;
+    position: absolute;
+    background: #ffffff;
+    top: 33px;
+    right: 0px;
+    border-radius: 2px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05);
+    display: none;
+    z-index: 10000;
+}
+
+.main-block {
+    margin-top: -80px
+}
+
+.main-block .carousel, .main-block .carousel-inner {
+    max-height: 770px;
+}
+
+.main-block .carousel-inner .item img {
+    width: 100%;
+    margin-top: -100px;
+}
+
+.main-block .carousel-inner .item .banner-bajo {
+    width: 100%;
+    margin-top: -50px;
+}
+
+.nav-tabs-two {
+    border-radius: 6px;
+}
+
+.nav-tabs-two li a {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.tab-content {
+    background-color: #FFF;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+footer, #interiores > footer {
+    font-size: 12px;
+    background-color: #FFF;
+    border-top: #c6c6c6 solid 1px;
+}
+
+.foot, #interiores .foot {
+    color: #6d6d6d;
+    margin-top: 0;
+    padding-bottom: 20px;
+    background-image: url(../assets/img/back1.png);
+    background-repeat: repeat;
+    border-top: #c6c6c6 solid 1px;
+}
+
+.foot-item p a, #interiores .foot-item p a {
+    color: #6d6d6d;
+}
+
+#interiores .foot-item p a, #interiores .foot-item p {
+    font-size: 13px;
+}
+
+/* #########################  INTERIORES ###################### */
+#interiores h2 {
+    position: relative;
+    margin: 0;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    font-size: 30px;
+    line-height: 35px;
+    color: #4b4b4b;
+    font-weight: 400;
+}
+
+#interiores .espaciado {
+    margin-top: 40px;
+}
+
+@media ( max-width: 991px) {
+    #interiores .col-sm-12 {
+        margin-top: 40px;
+    }
+}
+
+#interiores .foot {
+    margin-top: 20px;
+}
+
+.iconos {
+    margin-top: 0;
+    padding: 30px 0;
+    background-image: url(../assets/img/divisor-iconos.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.iconos .item-icono {
+    min-height: 125px;
+    margin-bottom: 10px;
+}
+
+.iconos .item-icono .chat {
+    width: 59px;
+    height: 95px;
+    margin: 0 auto;
+    background-image: url(../assets/img/chat.png);
+    background-position: center top;
+}
+
+.iconos .item-icono .chat:hover {
+    background-image: url(../assets/img/chat-hover.png);
+    background-position: center top;
+}
+
+.iconos .item-icono .contacto {
+    width: 101px;
+    height: 93px;
+    margin: 0 auto;
+    background-image: url(../assets/img/contacto.png);
+    background-position: center top;
+}
+
+.iconos .item-icono .contacto:hover {
+    background-image: url(../assets/img/contacto-hover.png);
+    background-position: center top;
+}
+
+.iconos .item-icono .cuotas {
+    width: 134px;
+    height: 119px;
+    margin: 0 auto;
+    background-image: url(../assets/img/btn_cuotasycomisiones.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 134px 119px;
+}
+
+.iconos .item-icono .cuotas:hover {
+    background-image: url(../assets/img/btn_cuotasycomisiones.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 134px 119px;
+}
+
+.iconos .item-icono .asistencias {
+    width: 136px;
+    height: 120px;
+    margin: 0 auto;
+    background-image: url(../assets/img/asistencias.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.iconos .item-icono .asistencias:hover {
+    background-image: url(../assets/img/asistencias-hover.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.iconos .item-icono .educacion {
+    width: 111px;
+    height: 116px;
+    margin: 0 auto;
+    background-image: url(../assets/img/educacion.png);
+    background-position: center top;
+}
+
+.iconos .item-icono .educacion:hover {
+    background-image: url(../assets/img/educacion-hover.png);
+    background-position: center top;
+}
+
+.main-block {
+    background-color: #f1f1f1;
+}
+
+@media ( max-width: 1200px) {
+    .main-block {
+        margin-top: -10px
+    }
+
+    .pleca-logos {
+        padding: 8px 14px;
+    }
+
+    .pleca-logos img {
+        max-width: 220px;
+        height: auto;
+    }
+
+    .main-block .banner {
+        min-height: 450px;
+    }
+
+    .main-block .carousel-inner .item img {
+        margin-top: 10px;
+    }
+
+    .main-block .carousel-inner .item .banner-bajo {
+        margin-top: 10px;
+    }
+
+    .navy ul li ul li a {
+        font-size: 12px;
+    }
+}
+
+@media ( max-width: 767px) {
+    .header-2 .head-search {
+        display: none;
+    }
+
+    .pleca-logos {
+        padding: 8px 10px;
+    }
+
+    .pleca-logos img {
+        max-width: 180px;
+        height: auto;
+    }
+
+    .main-block .banner {
+        min-height: 350px;
+    }
+
+    .main-block .carousel-inner .item img {
+        margin-top: 10px;
+    }
+
+    .main-block .carousel-inner .item .banner-bajo {
+        margin-top: 10px;
+    }
+}
+
+@media ( max-width: 600px) {
+    .pleca-logos {
+        padding: 8px 8px;
+    }
+
+    .pleca-logos img {
+        max-width: 140px;
+        height: auto;
+    }
+
+    .main-block .banner {
+        min-height: 250px;
+    }
+
+    .main-block .carousel-inner .item img {
+        margin-top: 10px;
+    }
+
+    .main-block .carousel-inner .item .banner-bajo {
+        margin-top: 10px;
+    }
+}
+
+@media ( max-width: 767px) {
+    .navy ul li {
+        background-color: #FFF;
+    }
+}
+
+.acesso {
+    width: 200px;
+    padding: 0;
+}
+
+.acceso-cuenta {
+    padding: 0;
+    margin: 0;
+    background-color: #ab0a3c;
+    border-radius: 4px;
+}
+
+.acceso-cuenta a {
+    color: #FFF;
+    padding: 0;
+    margin: 0;
+}
+
+.icon-user {
+    padding-right: 15px;
+    margin-right: 5px;
+}
+
+.line-user {
+    position: relative;
+    float: left;
+    left: 45px;
+    margin-top: -11px;
+    height: 52px;
+    width: 4px;
+}
+
+.modal-content {
+    text-align: center;
+    width: 225px;
+    background-image: url(../assets/img/back1.png);
+    background-repeat: repeat;
+}
+
+.modal-footer {
+    text-align: center;
+}
+
+.modal-footer a {
+    margin-top: 5px;
+    color: #ab0a3c;
+}
+
+.modal-body input {
+    margin-bottom: 10px;
+    height: 50px;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #EAEAEA;
+}
+
+.modal-body input:active {
+    background-color: #EAEAEA;
+}
+
+.modal-body input:-webkit-autofill, .modal-body input:-webkit-autofill:hover,
+.modal-body input:-webkit-autofill:focus, .modal-body input:-webkit-autofill:active {
+    background-color: #EAEAEA;
+}
+
+.modal-content input .form-control {
+    background: #EBEBEB;
+    margin: 10px;
+}
+
+.activa {
+    color: #4b4b4b;
+    padding: 4px;
+    background-color: #f5f5f5;
+    margin-bottom: 5px;
+}
+
+.activa a {
+    font-size: 12px;
+    color: #4b4b4b;
+}
+
+.main-normal {
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.main-normal p, .main-normal li {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.titulos {
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.titulos h3 {
+    color: #ab0a3c;
+    font-weight: 700;
+}
+
+.list-9 li:before {
+    content: "\f138"; /* chevron-circle-right */
+    font-family: 'FontAwesome';
+    float: left;
+    margin-left: -20px;
+}
+
+.nav-tabs-three {
+    background-color: #CCCCCC;
+    border-bottom: #e6e6e6 solid 3px;
+    background: rgba(255, 255, 255, 1);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 3%, rgba(246, 246, 246, 1) 35%,
+    rgba(243, 243, 243, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255,
+    255, 1)), color-stop(3%, rgba(255, 255, 255, 1)),
+    color-stop(35%, rgba(246, 246, 246, 1)),
+    color-stop(100%, rgba(243, 243, 243, 1)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 3%, rgba(246, 246, 246, 1) 35%,
+    rgba(243, 243, 243, 1) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 3%, rgba(246, 246, 246, 1) 35%,
+    rgba(243, 243, 243, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 3%, rgba(246, 246, 246, 1) 35%,
+    rgba(243, 243, 243, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 3%, rgba(246, 246, 246, 1) 35%,
+    rgba(243, 243, 243, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',
+    endColorstr='#f3f3f3', GradientType=0);
+}
+
+.nav-tabs-three .nav-tabs-three-sidebar ul.nav li, .nav-tabs-three .nav-tabs-three-sidebar ul.nav {
+    background: none;
+    line-height: 24px;
+}
+
+.nav-tabs-three .nav-tabs-three-sidebar .nav li a, .nav-tabs-three .nav-tabs-three-sidebar .nav li h4,
+.nav-tabs-three .nav-tabs-three-sidebar .nav li h5 {
+    background: none;
+    padding: 6px 10px;
+    border: none;
+}
+
+.nav-tabs-three .nav-tabs-three-sidebar .nav li a:hover {
+    color: #ab0a3c;
+    padding: 4px 10px;
+    background: rgba(171, 10, 60, 0.1);
+    border-top: #ab0a3c solid 1px;
+    border-bottom: #eee9ee solid 2px;
+}
+
+.nav-tabs-three .nav-tabs-three-sidebar ul.nav li.menu-activo a {
+    color: #ab0a3c;
+    padding: 6px 10px;
+    background-color: #fff;
+    border-bottom: #eee9ee solid 2px;
+}
+
+.nav-tabs-three .nav-tabs-three-sidebar ul.nav.lateral-asistencias li {
+
+}
+
+.nav-tabs-three .nav-tabs-three-sidebar ul.nav.lateral-asistencias li.active a {
+    color: #ab0a3c;
+    background-color: #fff;
+    border-top: none;
+    border-bottom: #eee9ee solid 2px;
+}
+
+.image-style-one .volaris-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/tarjetas/t-volaris-hover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 3px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.image-style-one:hover .volaris-hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.image-style-one .volaris2-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/tarjetas/t-volaris2-hover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 3px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.image-style-one:hover .volaris2-hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.image-style-one .manchester-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/tarjetas/t-manchester-hover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 3px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.image-style-one:hover .manchester-hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.image-style-one .sicard-visa-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/tarjetas/t-sicard-visa-hover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 3px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.image-style-one:hover .sicard-visa-hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.image-style-one .platinum-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/tarjetas/t-platinum-hover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 3px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.image-style-one:hover .platinum-hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.image-style-one .sicardmc-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/tarjetas/t-sicardmc-hover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 3px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.image-style-one:hover .sicardmc-hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.image-style-one .sicard-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/tarjetas/t-sicard-hover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 3px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.image-style-one:hover .sicard-hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.image-style-one .sicardplatinum-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/tarjetas/t-sicardplatinum-hover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 3px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.image-style-one:hover .sicardplatinum-hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.image-style-one .sicardbasica-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/tarjetas/t-sicardbasica-hover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 3px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.image-style-one:hover .sicardbasica-hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.image-style-one .mibanco-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/tarjetas/t-mibanco-hover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 3px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.image-style-one:hover .mibanco-hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.image-style-one .business-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/tarjetas/t-business-hover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 3px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.image-style-one:hover .business-hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.image-style-one .cibanco-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/tarjetas/cibanco/t-cibanco-hover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 3px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.image-style-one:hover .cibanco-hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.image-style-one .lowes-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/tarjetas/t-lowes-hover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 3px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.image-style-one:hover .lowes-hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.image-style-one .fragua-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/tarjetas/t-fragua-hover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 3px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.image-style-one .ml-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/tarjetas/t-ml-hover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 3px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.image-style-one .multivaOro-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/tarjetas/t-multivaOro-hover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 3px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.image-style-one .multivaPlatinum-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/tarjetas/t-multivaPlatinum-hover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 3px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.image-style-one .genera-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/tarjetas/t-debito-invex-hover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 3px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.image-style-one .monedero-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/tarjetas/t-monedero-invex-hover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 3px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.image-style-one:hover .monedero-hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.image-style-one:hover .genera-hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.image-style-one:hover .ml-hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.image-style-one:hover .multivaOro-hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.image-style-one:hover .multivaPlatinum-hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.image-style-one:hover .volaris0-hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.image-style-one .volaris0-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/tarjetas/t-volaris0-hover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 3px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.image-style-one:hover .fragua-hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+@media ( max-width: 991px) {
+    .portfolio.pf-one .p-element {
+        border: none;
+    }
+
+    .image-style-one .volaris-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        background-image: url(../assets/img/tarjetas/t-volaris-hover.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top left;
+        border-radius: 3px;
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    .image-style-one .volaris2-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        background-image: url(../assets/img/tarjetas/t-volaris2-hover.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top left;
+        border-radius: 3px;
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    .image-style-one .manchester-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        background-image: url(../assets/img/tarjetas/t-manchester-hover.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top left;
+        border-radius: 3px;
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    .image-style-one .sicard-visa-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        background-image: url(../assets/img/tarjetas/t-sicard-visa-hover.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top left;
+        border-radius: 3px;
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    .image-style-one .platinum-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        background-image: url(../assets/img/tarjetas/t-platinum-hover.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top left;
+        border-radius: 3px;
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    .image-style-one .sicardmc-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        background-image: url(../assets/img/tarjetas/t-sicardmc-hover.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top left;
+        border-radius: 3px;
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    .image-style-one .sicard-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        background-image: url(../assets/img/tarjetas/t-sicard-hover.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top left;
+        border-radius: 3px;
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    .image-style-one .sicardplatinum-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        background-image: url(../assets/img/tarjetas/t-sicardplatinum-hover.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top left;
+        border-radius: 3px;
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    .image-style-one .sicardbasica-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        background-image: url(../assets/img/tarjetas/t-sicardbasica-hover.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top left;
+        border-radius: 3px;
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    .image-style-one .mibanco-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        background-image: url(../assets/img/tarjetas/t-mibanco-hover.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top left;
+        border-radius: 3px;
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    .image-style-one .business-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        background-image: url(../assets/img/tarjetas/t-business-hover.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top left;
+        border-radius: 3px;
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+}
+
+.table-responsive {
+    overflow-x: auto;
+    overflow: hidden;
+    min-height: 0.01%
+}
+
+.table-responsive > thead > tr > th, .table-responsive > tbody > tr > th,
+.table-responsive > tfoot > tr > th, .table-responsive > thead > tr > td,
+.table-responsive > tbody > tr > td, .table-responsive > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd
+}
+
+.tabla-accordion {
+    border-top: none;
+}
+
+#interiores .table-responsive > table {
+    width: 100%
+}
+
+#interiores .table-responsive > table.table tr td:first-child {
+    width: 32%;
+}
+
+#interiores .table-responsive > table.table tr td:last-child {
+    width: 32%;
+}
+
+#interiores .table-responsive > table.table, #interiores .table-responsive > table.table > tr > td {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#interiores .table-responsive > table.table tr td {
+    text-align: center;
+    font-size: 12px;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td,
+.table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 4px;
+    line-height: 1.3;
+    vertical-align: top;
+    border-top: none;
+}
+
+@media screen and (max-width: 767px) {
+    .table-responsive {
+        width: 100%;
+        margin-bottom: 13.5px;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        overflow: hidden;
+        border: none
+    }
+
+    .table-responsive table {
+        width: 100%
+    }
+}
+
+.tab-pane h3 img {
+    padding-bottom: 10px;
+    margin-right: 10px;
+}
+
+.separador-asistencia {
+    border-left: #CCCCCC solid 1px;
+}
+
+.separador-educacion {
+    border-right: #CCCCCC solid 1px;
+}
+
+@media ( max-width: 991px) {
+    .separador-asistencia {
+        border-left: none;
+    }
+}
+
+.tabs-asistencia .nav-tabs-two {
+    width: 100%;
+}
+
+.tabs-asistencia .nav-tabs-two ul.nav.nav-tabs li {
+    width: 33%
+}
+
+.bg-contacto {
+    background-image: url(../assets/img/contacto/bg-contacto.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.bg-contacto h2 {
+    font-weight: 300;
+    font-size: 32px;
+}
+
+.bg-contacto p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.contacto-espaciado {
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+
+@media ( max-width: 991px) {
+    .bg-contacto {
+        background-image: url(../assets/img/contacto/bg-contacto.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+    }
+
+    .contacto-espaciado {
+        margin-top: 60px;
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
+}
+
+.help-block .text-danger ul li {
+    font-size: 10px;
+}
+
+.help-block {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #737373;
+    font-size: 10px;
+    list-style: none;
+}
+
+.text-danger {
+    color: #9B0E11;
+    font-size: 10px;
+    list-style: none;
+}
+
+.text-danger .error {
+    font-size: 9px;
+}
+
+.form-control .altas {
+    text-transform: uppercase;
+}
+
+.panel-default {
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.6);
+    margin-top: 50px;
+    border: none;
+    border-radius: 8px;
+}
+
+.panel-perfil {
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+    margin-top: 40px;
+}
+
+.login-box {
+    margin: 0 auto;
+}
+
+.login-box-btm {
+    color: #FFFFFF;
+}
+
+.login-box-btm a {
+    color: #dedede;
+}
+
+.portfolio-modal {
+
+}
+
+.portfolio-modal {
+    margin: 0 auto;
+}
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.portfolio-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #222;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.portfolio-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #222;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.close-chat {
+    float: right;
+    position: relative;
+    top: 0;
+    right: 25px;
+    width: 38px;
+    height: 45px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.close-chat:hover {
+    opacity: .5;
+}
+
+.header-chat {
+    background-color: #f3f3f3;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.panel .panel-body {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.portfolio-modal .panel .smart-forms {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+.portfolio-modal .panel .smart-forms .btn, .portfolio-modal .panel .smart-forms textarea {
+    border-radius: 8px;
+}
+
+.ventana-modal-promociones {
+    margin-top: 60px;
+}
+
+.panel-collapse {
+    padding-left: 40px;
+}
+
+.foot-item .panel-collapse {
+    padding-left: 2px;
+}
+
+.panel-collapse a {
+    color: rgba(153, 153, 153, 1.00);
+    width: 100%;
+}
+
+.panel-collapse a:hover, .panel-collapse a .activo {
+    color: rgba(81, 81, 81, 1.00);
+}
+
+.btn-volaris {
+    color: #fff;
+    background-color: #A12885;
+    border-color: #84196b
+}
+
+.btn-volaris:focus, .btn-volaris.focus {
+    color: #fff;
+    background-color: #912077;
+    border-color: #781461
+}
+
+.btn-volaris:hover {
+    color: #fff;
+    background-color: #912077;
+    border-color: #912077
+}
+
+.btn-volaris:active, .btn-volaris.active, .open > .dropdown-toggle.btn-volaris {
+    color: #fff;
+    background-color: #912077;
+    border-color: #912077
+}
+
+.btn-volaris:active:hover, .btn-volaris.active:hover, .open > .dropdown-toggle.btn-volaris:hover,
+.btn-volaris:active:focus, .btn-volaris.active:focus, .open > .dropdown-toggle.btn-volaris:focus,
+.btn-volaris:active.focus, .btn-volaris.active.focus, .open > .dropdown-toggle.btn-volaris.focus {
+    color: #fff;
+    background-color: #912077;
+    border-color: #781461
+}
+
+.btn-volaris:active, .btn-volaris.active, .open > .dropdown-toggle.btn-volaris {
+    background-image: none
+}
+
+.btn-volaris.disabled, .btn-volaris[disabled], fieldset[disabled] .btn-volaris,
+.btn-volaris.disabled:hover, .btn-volaris[disabled]:hover, fieldset[disabled] .btn-volaris:hover,
+.btn-volaris.disabled:focus, .btn-volaris[disabled]:focus, fieldset[disabled] .btn-volaris:focus,
+.btn-volaris.disabled.focus, .btn-volaris[disabled].focus, fieldset[disabled] .btn-volaris.focus,
+.btn-volaris.disabled:active, .btn-volaris[disabled]:active, fieldset[disabled] .btn-volaris:active,
+.btn-volaris.disabled.active, .btn-volaris[disabled].active, fieldset[disabled] .btn-volaris.active {
+    background-color: #A12885;
+    border-color: #84196b
+}
+
+.btn-indigo {
+    color: #fff;
+    background-color: #191f6d;
+    border-color: #111656
+}
+
+.btn-indigo:focus, .btn-indigo.focus {
+    color: #fff;
+    background-color: #161b56;
+    border-color: #0d114a
+}
+
+.btn-indigo:hover {
+    color: #fff;
+    background-color: #161b56;
+    border-color: #161b56
+}
+
+.btn-indigo:active, .btn-indigo.active, .open > .dropdown-toggle.btn-indigo {
+    color: #fff;
+    background-color: #161b56;
+    border-color: #161b56
+}
+
+.btn-indigo:active:hover, .btn-indigo.active:hover, .open > .dropdown-toggle.btn-indigo:hover,
+.btn-indigo:active:focus, .btn-indigo.active:focus, .open > .dropdown-toggle.btn-indigo:focus,
+.btn-indigo:active.focus, .btn-indigo.active.focus, .open > .dropdown-toggle.btn-indigo.focus {
+    color: #fff;
+    background-color: #161b56;
+    border-color: #0d114a
+}
+
+.btn-indigo:active, .btn-indigo.active, .open > .dropdown-toggle.btn-indigo {
+    background-image: none
+}
+
+.btn-indigo.disabled, .btn-indigo[disabled], fieldset[disabled] .btn-indigo,
+.btn-indigo.disabled:hover, .btn-indigo[disabled]:hover, fieldset[disabled] .btn-indigo:hover,
+.btn-indigo.disabled:focus, .btn-indigo[disabled]:focus, fieldset[disabled] .btn-indigo:focus,
+.btn-indigo.disabled.focus, .btn-indigo[disabled].focus, fieldset[disabled] .btn-indigo.focus,
+.btn-indigo.disabled:active, .btn-indigo[disabled]:active, fieldset[disabled] .btn-indigo:active,
+.btn-indigo.disabled.active, .btn-indigo[disabled].active, fieldset[disabled] .btn-indigo.active {
+    background-color: #191f6d;
+    border-color: #111656
+}
+
+.btn-empresarial {
+    color: #fff;
+    background-color: #45464d;
+    border-color: #23242d
+}
+
+.btn-empresarial:focus, .btn-empresarial.focus {
+    color: #fff;
+    background-color: #323339;
+    border-color: #28282f
+}
+
+.btn-empresarial:hover {
+    color: #fff;
+    background-color: #323339;
+    border-color: #323339
+}
+
+.btn-empresarial:active, .btn-empresarial.active, .open > .dropdown-toggle.btn-empresarial {
+    color: #fff;
+    background-color: #323339;
+    border-color: #323339
+}
+
+.btn-empresarial:active:hover, .btn-empresarial.active:hover, .open > .dropdown-toggle.btn-empresarial:hover,
+.btn-empresarial:active:focus, .btn-empresarial.active:focus, .open > .dropdown-toggle.btn-empresarial:focus,
+.btn-empresarial:active.focus, .btn-empresarial.active.focus, .open > .dropdown-toggle.btn-empresarial.focus {
+    color: #fff;
+    background-color: #323339;
+    border-color: #28282f
+}
+
+.btn-empresarial:active, .btn-empresarial.active, .open > .dropdown-toggle.btn-empresarial {
+    background-image: none
+}
+
+.btn-empresarial.disabled, .btn-empresarial[disabled], fieldset[disabled] .btn-empresarial,
+.btn-empresarial.disabled:hover, .btn-empresarial[disabled]:hover,
+fieldset[disabled] .btn-empresarial:hover, .btn-empresarial.disabled:focus,
+.btn-empresarial[disabled]:focus, fieldset[disabled] .btn-empresarial:focus,
+.btn-empresarial.disabled.focus, .btn-empresarial[disabled].focus,
+fieldset[disabled] .btn-empresarial.focus, .btn-empresarial.disabled:active,
+.btn-empresarial[disabled]:active, fieldset[disabled] .btn-empresarial:active,
+.btn-empresarial.disabled.active, .btn-empresarial[disabled].active,
+fieldset[disabled] .btn-empresarial.active {
+    background-color: #45464d;
+    border-color: #23242d
+}
+
+/*  ## TOP BAR NAVIDAD ##  */
+#div-navidad {
+    display: inline-block;
+}
+
+#id-navidad {
+    max-width: 150px;
+    height: auto;
+}
+
+.botones-ingreso {
+    text-align: right
+}
+
+.espaciado-acceso {
+    margin-top: 0;
+}
+
+@media ( max-width: 991px) {
+    #id-navidad {
+        max-width: 120px;
+        height: auto;
+    }
+
+    .logo-header {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .botones-ingreso {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .espaciado-acceso {
+        margin-top: 10px;
+    }
+}
+
+@media ( max-width: 680px) {
+    #id-navidad {
+
+    }
+}
+
+.top-bar {
+    background: #f6f6f6;
+    color: #999;
+    padding: 12px 0px;
+    font-size: 13px;
+    line-height: 25px;
+    border-bottom: 1px solid #f5f5f5;
+    border-bottom: #D2D2D2 solid 1px;
+    /**background-image:url(../assets/img/copos-navidad.png);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}

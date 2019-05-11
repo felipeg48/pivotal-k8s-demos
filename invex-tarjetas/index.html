@@ -1,0 +1,1239 @@
+
+
+
+
+<!DOCTYPE html>
+<html class="no-js" id="ng-app" ng-app="myapp">
+<head>
+<!-- <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"> -->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
+<title>INVEX</title>
+<!-- Description, Keywords and Author -->
+<meta name="description" content="INVEX Tarjetas">
+<meta name="keywords" content="Tarjetas, INVEX">
+<meta name="author" content="Rinoceronte Agencia Digital">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-control" content="public">
+
+<!-- Styles -->
+<!-- Bootstrap CSS -->
+<link
+	href="resources/css/bootstrap.min.css"
+	rel="stylesheet">
+<!-- Font awesome CSS -->
+<link
+	href="resources/css/font-awesome.min.css"
+	rel="stylesheet">
+
+<!-- Owl carousel -->
+<link
+	href="resources/css/owl.carousel.css"
+	rel="stylesheet">
+
+<!-- CSS for this page -->
+<!-- Revolution Slider -->
+<link
+	href="resources/css/settings.css"
+	rel="stylesheet">
+
+<link
+	href="resources/css/style-23.css"
+	rel="stylesheet">
+
+<!-- Smart form -->
+<link
+	href="resources/css/smart-forms.css"
+	rel="stylesheet">
+
+<!-- Base style -->
+<link
+	href="resources/css/styles/style.css"
+	rel="stylesheet">
+
+<!-- Skin CSS -->
+<link
+	href="resources/css/styles/skin-red.css"
+	rel="stylesheet" id="color_theme">
+
+<!-- Custom CSS. Type your CSS code in custom.css file -->
+<link href="resources/css/custom.css"
+	rel="stylesheet">
+
+<!-- Favicon -->
+<link rel="shortcut icon"
+	href="resources/img/favicon.png"
+	type="image/x-icon">
+</head>
+
+<style>
+.full {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1000; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+</style>
+
+<script type="text/javascript">
+var contextPath='';
+localStorage.setItem("context", contextPath);
+var ENV_PROPERTY = 'https://www.tarjetadecreditomultiva.com/';
+</script>
+
+<script>
+	(function(i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function() {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script',
+			'https://www.google-analytics.com/analytics.js', 'ga');
+	ga('create', 'UA-42348662-4', 'auto');
+</script>
+
+<!-- Add class "boxed" along with body for boxed layout. -->
+<!-- Add "pattern-x" (1 to 5) for background patterns. -->
+<!-- Add "img-x" (1 to 5) for background images. -->
+<body ng-controller="IndexController" ng-init="init()">
+
+	<div class="full" id="modalSpin">
+		<div style="margin: 0 auto;" id="spin"></div>
+	</div>
+
+	<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"
+		id="splash">
+		<div class="container" style="margin-top: 10%;">
+			<img class="img-responsive" ng-src="{{rutaSplash}}"
+				style="display: block; margin: auto;"></img>
+		</div>
+	</div>
+
+	<!-- Outer Starts -->
+	<div class="outer">
+
+		<!-- Top bar starts -->
+		<div class="top-bar" ng-style="{'background-image': cenefa}">
+			<div class="container">
+
+				<!-- Social media starts -->
+				<div class="tb-social pull-right">
+					<div class="brand-bg text-right">
+						<!-- Brand Icons -->
+						<a href="https://www.facebook.com/InvexManU/" target="_blank"
+							class="facebook"><img
+							src="resources/assets/img/facebook.png"></a>
+						<a href="https://twitter.com/invextarjetas" target="_blank"
+							class="twitter"><img
+							src="resources/assets/img/twitter.png"></a>
+						<a href="mailto:servicioaclientes@invex.com" class="google-plus"><img
+							src="resources/assets/img/mail.png"></a>
+					</div>
+				</div>
+				<!-- Social media ends -->
+
+				<div class="clearfix"></div>
+			</div>
+		</div>
+
+		<!-- Top bar ends -->
+
+		<!-- Header two Starts -->
+		<div class="header-2">
+
+			<!-- Container -->
+			<div class="row pleca-uno">
+				<div class="container">
+					<div class="row pleca-logos">
+						<div class="col-xs-12">
+							<!-- Logo section -->
+							<div class="col-xs-12 col-sm-4 logo-header">
+								<h1>
+									<a ui-sref="home"><img
+										src="https://www.invextarjetas.com.mx/Imagenes/logo-invex.png"
+										class="responsive"></a>
+								</h1>
+							</div>
+							<div class="col-xs-12 col-sm-4 text-center" id="div-navidad">
+								<img
+									src="resources/assets/img/id-navidad.png"
+									class="img-responsive center-block hide" id="id-navidad" style="">
+							</div>
+							<div class="col-xs-12 col-sm-4 botones-ingreso">
+								<h1>
+									<a ng-href="{{getCurrenState('#portfolioModal3')}}"
+										data-toggle="modal"><input type="button"
+										class="btn btn-empresarial btn-sm sm-right"
+										style="font-size: 14px" value="Acceso Empresarial" /></a><br />
+									<a ng-href="{{getCurrenState('#portfolioModal4')}}"
+										data-toggle="modal"><input type="button"
+										class="btn btn-primary btn-sm hide visible-sm visible-xs center-block espaciado-acceso"
+										style="font-size: 14px;" value="Acceso a mi cuenta" /></a>
+								</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row  pleca-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+
+							<!-- Navigation starts.  -->
+							<div class="navy">
+								<ul>
+									<!-- Main menu -->
+									<li><a href="https://invex.com/" target="_blank">INVEX</a></li>
+										<!-- Submenu -->
+<!-- 										<ul> -->
+<!-- 											<li><a ui-sref="invex">Acerca de INVEX</a></li> -->
+<!-- 											<li><a ui-sref="invexTarjetas">Acerca de INVEX -->
+<!-- 													Tarjetas</a></li> -->
+<!-- 										</ul> -->
+<!-- 									</li> -->
+									<li><img
+										src="resources/assets/img/dividers-menu.png"
+										class="separador"></li>
+									<li class="has-sub"><a ui-sref="tarjetas.portafolio"
+										ng-class="{active: $state.includes('tarjetas')}">Tarjetas</a>
+										<!-- Submenu -->
+										<ul>
+                          					<li><a href="">Tarjetas de Crédito</a>
+						                      <ul style="margin-left: 20%;">
+						                      	<li><a ui-sref="tarjetas.volaris0">Volaris INVEX 0</a></li>
+											  	<li><a ui-sref="tarjetas.volaris">Volaris  INVEX </a></li>
+											  	<li><a ui-sref="tarjetas.volaris2">Volaris INVEX 2.0</a></li>
+											  	<li><a ui-sref="tarjetas.manchester">Manchester United INVEX</a></li>
+											  	<li><a ui-sref="tarjetas.sicardplusinvex">SiCard</a></li>
+											  	<li><a ui-sref="tarjetas.mibanco">Mi Banco</a></li>
+											  	<li><a ui-sref="tarjetas.business">Business</a></li>
+											  	<li><a ui-sref="tarjetas.cibancoOro">CIBanco Oro</a></li>
+											  	<li><a ui-sref="tarjetas.lowes">Lowe's INVEX</a></li>
+                          					  	<li><a ui-sref="tarjetas.fragua">INVEX Farmacias Guadalajara</a></li>
+                          					  	<li><a ui-sref="tarjetas.mercadoLibre">Mercado Libre INVEX</a></li>
+                          					  	<li><a ui-sref="tarjetas.multivaOro">MULTIVA Oro</a></li>
+                          					  	<li><a ui-sref="tarjetas.multivaPlatinum">MULTIVA Platinum</a></li>
+                          					  </ul>
+						                    </li>
+						                    <li><a href="">Tarjetas de Débito</a>
+						                      <ul style="margin-left: 20%;">
+						                      	<li><a ui-sref="tarjetas.genera">INVEX Genera</a></li>
+						                      </ul>
+						                    </li>
+											<li><a href="">Otros Productos</a>
+						                      <ul style="margin-left: 20%;">
+						                      	<li><a ui-sref="tarjetas.monedero">Monedero INVEX</a></li>
+						                      </ul>
+						                    </li>
+										</ul>
+									</li>
+									<li><img
+										src="resources/assets/img/dividers-menu.png"
+										class="separador"></li>
+									<li class="has-sub"><a ui-sref="pagaTuTarjeta"
+										ng-class="{active: $state.includes('pagaTuTarjeta') || $state.includes('domiciliaTuTarjeta') || $state.includes('pagoDeServicios') || $state.includes('centralDePagos') || $state.includes('educacionFinanciera') || $state.includes('aclaraciones')}">Servicios
+											en línea</a> <!-- Submenu -->
+										<ul>
+											<li><a ui-sref="pagaTuTarjeta">Paga tu tarjeta</a></li>
+ 											<li><a ui-sref="domiciliaTuTarjeta">Domicilia tu tarjeta</a></li> 
+											<li><a ui-sref="pagoDeServicios">Pago de servicios</a></li>
+											<!--<li><a ui-sref="centralDePagos">Central de Pagos</a></li>-->
+											<li><a ui-sref="educacionFinanciera">Educación Financiera</a></li>
+											<li><a ui-sref="aclaraciones">Aclaraciones</a></li>
+										</ul>
+									</li>
+									<li><img
+										src="resources/assets/img/dividers-menu.png"
+										class="separador"></li>
+									<li class="has-sub"><a ui-sref="mesessinintereses"
+										ng-class="{active: $state.includes('mesessinintereses') || $state.includes('visa') || $state.includes('bumeran') || $state.includes('segmentadas')}">Promociones</a>
+										<!-- Submenu -->
+										<ul>
+											<li><a ui-sref="mesessinintereses">Meses Sin
+													Intereses</a></li>
+											<!-- <li><a ui-sref="visa">VISA</a></li> -->
+											<!-- <li><a ui-sref="bumeran">Búmeran</a></li> -->
+											<!-- <li><a ui-sref="segmentadas">Segmentadas</a></li> -->
+										</ul></li>
+									<li><img
+										src="resources/assets/img/dividers-menu.png"
+										class="separador"></li>
+									<li class="has-sub"><a ui-sref="aceleradorVolaris"
+										ng-class="{active: $state.includes('recompensasSelect') || $state.includes('recompensasIndigo') || $state.includes('recompensasVolaris') || $state.includes('aceleradorVolaris')}">Recompensas</a>
+										<!-- Submenu -->
+										<ul>
+											<li><a ui-sref="aceleradorVolaris">Acelerador Monedero
+													Volaris</a></li>
+											<li><a ui-sref="recompensasVolaris">Monedero Volaris</a></li>
+											<li><a ui-sref="recompensasSelect">Recompensas
+													Select</a></li>
+											<li><a ui-sref="recompensasIndigo">Recompensas
+													Índigo</a></li>
+										</ul></li>
+									<li><img
+										src="resources/assets/img/dividers-menu.png"
+										class="separador"></li>
+									<li class="has-sub"><a ui-sref="bancos"
+										ng-class="{active: $state.includes('bancos') || $state.includes('superMercados') || $state.includes('pagosPorInternet') || $state.includes('recomendaciones')}">Lugares
+											de pago</a> <!-- Submenu -->
+										<ul>
+											<li><a ui-sref="bancos">Bancos</a></li>
+											<li><a ui-sref="superMercados">Otros Lugares de Pago</a></li>
+											<li><a ui-sref="pagosPorInternet">Pagos de internet</a></li>
+											<li><a ui-sref="recomendaciones">Recomendaciones</a></li>
+										</ul></li>
+									<li class="acceso-cuenta pull-right has-sub"><a href="#"><span
+											class="icon-user"><img
+												src="resources/assets/img/icon-user.png"></span><img
+											src="resources/assets/img/line-user.png"
+											class="line-user"><span style="color: #FFF;">Acceso
+												a mi cuenta</span></a> <!-- Dropdown content with item details -->
+										<ul>
+											<div class="modal-content" style="background-color: white;">
+													<div id="login-susario" class="carousel slide" data-ride="carousel" style="width: auto; background: white;" data-interval="false">
+														<!-- <ol class="carousel-indicators">
+															<li data-target="login-susario" data-slide-to="0" class="active"></li>
+															<li data-target="login-susario" data-slide-to="1" class=""></li>
+														</ol> -->
+														<div class="carousel-inner">
+															<div class="item active" style="background-color: white;">
+																<div class="container" style="width: auto;color: white;">
+																	<form name="usuarioFase1" class="form" ng-submit="consultaUsuario()" id="login">
+																		<div class="modal-body">
+																			<fieldset>
+																				<div class="row">
+																					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+																						<input type="password" placeholder="Usuario"  ng-keypress="changeLastCharacter()"
+																							id="noCuenta" name="pword" value="" class="form-control" ng-model="usuario.usuarioform"
+																							 required/>
+																					</div>
+
+																				</div>
+																			</fieldset>
+																		</div>
+																		<div class="modal-footer" style="align: center">
+																				<button id="botonUsuario" type="submit" class="btn btn-color">Continuar</button>
+																				<br><br>
+																				<a ui-sref="recuperaUsuario">Recupera tu usuario</a> <br>
+																				<div class="activa">
+																					<a ui-sref="activaUsuario">ACTIVA TU REGISTRO</a>
+																				</div>
+
+																		</div>
+																	</form>
+																</div>
+															</div>
+
+															<div class="item " style="background-color: white;">
+																<div class="container" style="width: auto;color: white;">
+																	<form id="login" role="form" ng-submit="login()">
+																		<div class="modal-body">
+																			<fieldset>
+																				<div class="row">
+																					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+																						<a style="color: rgb(171, 10, 60);">{{errorusuario}}</a>
+																						<h4>{{bienvenido.bienvenido}} <br>{{usuario.nombreP}} </h4>
+																						<h4>{{bienvenido.usuario}}<br>{{usuario.usuario}}</h4>
+																					</div>
+																				</div>
+																				<div class="row">
+																					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+																						<input ng-model="credentials.j_password"
+																							class="form-control" type="password" id="j_password"
+																							name="j_password" ng-keypress="changeLastCharacter()"
+																							placeholder="Contraseña" value="" required>
+																					</div>
+																				</div>
+																			</fieldset>
+																		</div>
+																		<div class="modal-footer">
+																			<button type="submit" class="btn btn-color" id="botonContinuar">Continuar</button>
+																			<br><br>
+																			<a href="#login-susario" roll="button" type="submit"
+																			data-target="#login-susario" data-slide-to="0" onclick="regresa()">
+																				Cambiar de Usuario
+																			</a>
+																			<br><br>
+																			<a ui-sref="recuperaContrasenia">Recupera tu contraseña</a>
+
+																			<br>
+																			 <div class="activa">
+																				<a ui-sref="activaUsuario">ACTIVA TU REGISTRO</a>
+																			</div>
+																			<script>
+																			function regresa() {
+																			    document.getElementById("noCuenta").value = "";
+																			}
+																			</script>
+																		</div>
+																	</form>
+																</div>
+															</div>
+														</div>
+													</div>
+											</div>
+
+										</ul>
+								</ul>
+							</div>
+							<!-- Navigation ends -->
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Header two ends -->
+		<div ui-view="view" class="ng-view" ></div>
+
+		<!-- Modal error -->
+		<div class="portfolio-modal modal fade" id="modalError" tabindex="-1"
+			role="dialog" aria-hidden="true">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4"></div>
+					<div class=" col-md-4 login-box">
+						<div class="panel panel-default">
+							<div class="text-right close-chat" data-dismiss="modal">
+								<a><img
+									src="resources/assets/img/chat/close.png"></a>
+							</div>
+							<div class="smart-forms text-center">
+								<br> <br>
+								<div class="row" style="margin-top: 15px;">
+									<div class="section text-center">
+										<p
+											style="color: #9B0E11; list-style: none; display: block; margin-top: 5px; margin-bottom: 10px; font-size: large;"
+											ng-show="loginError">{{msgError}}</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal error -->
+
+		<!-- Modal 3 -->
+		<div class="portfolio-modal modal fade" id="portfolioModal3"
+			tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4"></div>
+					<div class=" col-md-4 login-box">
+						<div class="panel panel-default">
+							<div class="text-right close-chat" data-dismiss="modal">
+								<a><img
+									src="resources/assets/img/chat/close.png"></a>
+							</div>
+							<div class="text-center header-chat">
+								<img
+									src="resources/assets/img/chat/acceso-empresarial.png"
+									class="img-responsive center-block">
+							</div>
+							<div class="smart-forms text-center">
+								<div id="login-susarioEmpresarial" class="carousel slide" data-ride="carouselEmpresarial" style="width: auto; background: white;" data-interval="false">
+									<div class="carousel-inner">
+										<div class="item active" style="background-color: white;">
+											<div class="container" style="width: auto;color: white;">
+												<form name="usuarioFase1" class="form" ng-submit="consultaUsuarioEmpresarial()" id="login">
+													<div class="row">
+														<div class="section">
+															<label class="field"> <!-- Input box --> <input
+																type="password" name="pwordEmpresarial" id="usuario-empresarial"
+																class="gui-input" placeholder="Usuario"
+																style="border-radius: 8px;" required>
+															</label>
+														</div>
+														<div class="section">
+															<input type="submit" id="botonUsuarioEmpresarial" class="btn btn-color btn-block"
+																value="Continuar">
+														</div>
+
+
+													</div>
+												</form>
+											</div>
+										</div>
+
+										<div class="item " style="background-color: white;">
+											<div class="container" style="width: auto;color: white;">
+												<form id="login" role="form" ng-submit="loginEmpresarial()">
+													<div class="row">
+														<div class="section">
+															<a style="color: rgb(171, 10, 60);">{{errorusuario}}</a>
+															<h4>{{bienvenidoEmpresarial.bienvenido}} <br>{{usuarioEmpresarial.nombreP}} </h4>
+															<h4>{{bienvenidoEmpresarial.usuario}}<br>{{usuarioEmpresarial.usuario}}</h4>
+															 <br />
+															 <label class="field"> <!-- Input box --> <input
+																type="password" name="pass" id="pass-empresareial"
+																class="gui-input" placeholder="Contraseña"
+																ng-model="credentialsEmpresarial.j_password"
+																style="border-radius: 8px;" required>
+															</label>
+														</div>
+														<div class="section" >
+															<input type="submit" class="btn btn-color btn-block" id="botonContinuarEmpresarial"
+																value="Continuar" >
+
+														   <br><br>
+															<a roll="button" data-slide-to="0" data-target="#login-susarioEmpresarial" data-dismiss="modal" ng-click="recuperaContraseniaEmpresarial()">Recupera tu contraseña</a>
+															<br><br>
+															<a href="#login-susarioEmpresarial" roll="button" type="submit"
+															data-target="#login-susarioEmpresarial" data-slide-to="0" onclick="regresaEmpresarial()">
+															Cambiar de Usuario
+															</a>
+														</div>
+														<div style="margin: 0 auto;" id="spinEmpresarial"></div>
+														<div class="section text-center">
+															<p
+																style="color: rgba(59, 59, 59, 1.00); list-style: none; display: block; margin-top: 5px; margin-bottom: 10px; font-size: large;"
+																ng-show="errorEmpresarial" ></p>
+														</div>
+														<script>
+														function regresaEmpresarial() {
+														    document.getElementById("usuario-empresarial").value = "";
+														    $scope.msgErrorEmpresarial="";
+														}
+
+
+														</script>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+<!-- 								<form id="login" role="form" ng-submit="loginEmpresarial()"> -->
+
+<!-- 									<div class="row"> -->
+<!-- 										<div class="section"> -->
+<!-- 											<label class="field"> Input box <input -->
+<!-- 												type="password" name="pword" id="usuario-empresarial" -->
+<!-- 												class="gui-input" placeholder="Usuario" -->
+<!-- 												style="border-radius: 8px;" required> -->
+<!-- 											</label> <br /> <label class="field"> Input box <input -->
+<!-- 												type="password" name="pass" id="pass-empresareial" -->
+<!-- 												class="gui-input" placeholder="Contraseña" -->
+<!-- 												ng-model="credentialsEmpresarial.j_password" -->
+<!-- 												style="border-radius: 8px;" required> -->
+<!-- 											</label> -->
+<!-- 										</div> -->
+<!-- 										<div class="section"> -->
+<!-- 											<input type="submit" class="btn btn-color btn-block" -->
+<!-- 												value="Continuar"> -->
+<!-- 										</div> -->
+<!-- 										<div style="margin: 0 auto;" id="spinEmpresarial"></div> -->
+<!-- 										<div class="section text-center"> -->
+<!-- 											<p -->
+<!-- 												style="color: rgba(59, 59, 59, 1.00); list-style: none; display: block; margin-top: 5px; margin-bottom: 10px; font-size: large;" -->
+<!-- 												ng-show="errorEmpresarial">{{msgErrorEmpresarial}}</p> -->
+<!-- 										</div> -->
+<!-- 									</div> -->
+<!-- 								</form> -->
+
+								<div class="section text-center">
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4"></div>
+				</div>
+			</div>
+		</div>
+	<!-- Modal 3 -->
+
+
+	<!-- HACK -->
+	<!-------------------------------------------------------------------->
+	<div class="container" ng-init="init(19)">
+		<!-- ########################### TAB DE TARJETA #####################-->
+	
+		<!-- UI twenty three -->
+		<div class="ui-23">
+			<div class="container">
+				<script type="text/javascript">
+				</script>
+				<!-- UI content -->
+				<div class="block-content">
+					<div class="tabs">
+						<div class="row">
+							<div class="col-md-4 col-sm-4">
+								<p>
+									<img
+										src="resources/assets/img/tarjetas/volaris2-sombra.png"
+										class="img-responsive">
+								</p>
+								<ul class="nav">
+									<li class="tab1 active"><a href="volaris#one"
+										data-toggle="tab"> <span>Descripción</span></a></li>
+									<li class="tab2"><a href="volaris#two" data-toggle="tab">
+											<span>Beneficios</span>
+									</a></li>
+									<li class="tab3"><a href="volaris#three" data-toggle="tab">
+											<span>Solicítala</span>
+									</a></li>
+									<li class="tab4"><a href="volaris#four" data-toggle="tab"
+										style="line-height: 16px; padding-top: 16px;"> <span>Cuotas
+												<br /> y comisiones
+										</span></a></li>
+									<li class="tab5"><a ui-sref="recompensasVolaris"
+										style="line-height: 16px; padding-top: 16px;"> <span>Monedero
+												<br /> Volaris
+										</span></a></li>
+								</ul>
+								<div class="clearfix visible-xs"></div>
+								<p>
+									<a href="https://www.invextarjetas.com.mx/invex/Documentos/CONDUSEF/FolletoVolaris2.pdf" target="_blank">
+										<img src="resources/assets/img/tarjetas/btnred-folleto.png"
+										class="img-responsive center-block">
+									</a>
+								</p>
+								<div class="clearfix visible-xs"></div>
+								<p>
+									<img
+										src="resources/img/Linea_Volaris.png"
+										class="img-responsive center-block">
+								</p>
+								<div class="clearfix visible-xs"></div>
+							</div>
+							<div class="col-md-8 col-sm-8">
+								<div class="tab-content">
+									<div class="tab-pane active" id="one">
+										<!-- heading -->
+										<h2>
+											Tarjeta de Crédito Volaris 2.0<br /> <img
+												src="resources/assets/img/tarjetas/line-titulo.png"
+												class="img-responsive">
+										</h2>
+										<!-- heading -->
+										<h3 class="color">DESCRIPCIÓN</h3>
+										<p>
+											<strong>
+												Tarjeta de Crédito Visa Platinum para quienes buscan los mejores beneficios para viajar:
+											</strong><br />
+										</p>
+										<p>
+										<ul>
+											<li>Beneficios preferenciales al viajar con Volaris.</li>
+											<li>Monedero Volaris.</li>
+											<li>Membresía Priority Pass sin costo.</li>
+											<li>6 meses sin intereses en compras realizadas en el extranjero.<sup>(1)</sup></li>
+											<li>Aceptación a nivel mundial en más de 25 millones de comercios y en 750,000 cajeros automáticos.</li>
+											<li>Reemplazo urgente de la tarjeta en el extranjero por robo o extravío.</li>
+										</ul>
+										</p>
+										<p>
+											<strong>&iexcl;Solicítala
+												ya y comienza a disfrutar de los beneficios que tu tarjeta
+												tiene para ti!</strong>
+										</p>
+										<br>
+										<p>
+										<font size="2">(1)Monto minimo $700 pesos.</font> 
+										</p>
+										<br />
+										<p>
+											<a href="https://www.invextarjetas.com.mx/invex/landings/Solicitala/invex-volaris/indexSolicitalaYaBlack.html" target="_blank">
+											<img
+												src="resources/assets/img/tarjetas/btnred-solicitala.png"
+												class="img-responsive center-block">
+											</a>
+										</p>
+									</div>
+									<div class="tab-pane" id="two">
+										<h3 class="color">BENEFICIOS</h3>
+										<p>
+											<strong>Al activar tu tarjeta:</strong>
+										<ul>
+											<li>Bono de $2,150 pesos en Monedero Volaris.<sup style="font-size: 11px; line-height: 0">(1)</li>
+											<li>Anualidad gratis por un año.<sup style="font-size: 11px; line-height: 0">(2)</li>
+										</ul>
+										</p>
+										<p>
+											<strong>Usando tu tarjeta:</strong>
+										<ul>
+											<li>2.0% de Monedero en todas tus compras.<sup style="font-size: 11px; line-height: 0">(3)</li>
+										</ul>
+										</p>
+										<p>
+											<strong>Al comprar en Volaris:</strong>
+										<ul>
+											<li>2.5% de Monedero Volaris en tus compras en Volaris.<sup style="font-size: 11px; line-height: 0">(3)</li>
+											<li>3, 6 y 11 meses sin intereses en Volaris.</li>
+											<li>Membresía Individual VClub para el titular de la
+												tarjeta.</li>
+											<li>Bonificación del 15% en la compra de alimentos a
+												bordo.<sup style="font-size: 11px; line-height: 0">(4)</li>
+										</ul>
+										</p>
+										<p>
+											<strong>Viajando en Volaris:<sup style="font-size: 11px; line-height: 0">(5)</sup></strong>
+										<ul>
+											<li>1ra maleta documentada sin costo.</li>
+											<li>10kg extra sobre 1ra maleta documentada<sup style="font-size: 11px; line-height: 0">(6)</sup></li>
+											<li>10kg adicionales en equipaje de mano<sup style="font-size: 11px; line-height: 0">(7)</sup></li>
+											<li>Asiento Regular<sup style="font-size: 11px; line-height: 0">(8)</sup></li>
+											<li>Prioridad en abordaje.</li>
+											<li>Acceso al salón VISA GRAND Lounge de la Ciudad de México.</li>
+										</ul>
+										</p>
+										<p>
+											<strong>Por permanencia:</strong>
+											<ul>
+												<li>Bono de aniversario por $1,000 pesos en Monedero Volaris.<sup style="font-size: 11px; line-height: 0">(9)</li>
+											</ul>
+										</p>
+										<p>
+											<strong>Beneficios adicionales proporcionados por VISA:</strong>
+										<ul>
+											<li>Taxi ejecutivo al Aeropuerto de la Ciudad de México
+												(AICM).<sup style="font-size: 11px; line-height: 0">(10)</sup> <br /> Servicio gratuito 3 veces al año reservando
+												con 24 horas de anticipación en la pagina de
+												<a href="http://www.visa-platinum.com/mx/visa-travel-experience" target="_blank">www.visa-platinum.com/mx/visa-travel-experience</a>.<br />
+											</li>
+											<li>Membresía Priority Pass, solicítala en línea
+												Volaris INVEX y disfruta del acceso a más de 700 salas VIP de
+												aeropuertos internacionales.
+											</li>
+										</ul>
+										</p>
+										<div class="table-responsive">
+											<table class="table-bordered">
+												<tr>
+													<th class="col-md-4">Visitas</th>
+													<th class="col-md-3">Titular</th>
+													<th class="col-md-1">Acompañante 1</th>
+													<th class="col-md-1">Acompañante 2</th>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td>Sin Costo</td>
+													<td>Sin Costo</td>
+													<td>$550.00 más IVA</td>
+												</tr>
+												<tr>
+													<td>2</td>
+													<td>Sin Costo</td>
+													<td>Sin Costo</td>
+													<td>$550.00 más IVA</td>
+												</tr>
+												<tr>
+													<td>3</td>
+													<td>Sin Costo</td>
+													<td>Sin Costo</td>
+													<td>$550.00 más IVA</td>
+												</tr>
+												<tr>
+													<td>4</td> 
+													<td>$550.00 más IVA</td>
+													<td>$550.00 más IVA</td>
+													<td>$550.00 más IVA</td>
+												</tr>
+											</table>
+										</div>
+										<br />
+	
+										<p>
+	
+										<ul>
+	
+											<li>Visa Concierge.</li>
+											<li><a href="https://www.invextarjetas.com.mx/invex/Documentos/Beneficios/Seguro de alquiler de autos.pdf" target="_blank">Seguro de Renta de autos.</a></li>
+											<li><a href="https://www.invextarjetas.com.mx/invex/Documentos/Beneficios/Accidente en viajes.pdf" target="_blank">Seguro de Accidente de viaje.</a></li>
+											<li><a href="https://www.invextarjetas.com.mx/invex/Documentos/Beneficios/Servicios Medicos de Emergencia Internacional.pdf" target="_blank">Servicios médicos de emergencia internacional.</a></li>
+											<li><a href="https://www.invextarjetas.com.mx/invex/Documentos/Beneficios/Proteccion de Compra.pdf" target="_blank">Protección de Compra.</a></li>
+											<li><a href="https://www.invextarjetas.com.mx/invex/Documentos/Beneficios/Proteccion de Precio.pdf" target="_blank">Protección de Precio.</a></li>
+											<li><a href="https://www.invextarjetas.com.mx/invex/Documentos/Beneficios/Proteccion de Precio.pdf" target="_blank">Garantía extendida.</a></li>
+											<li><a href="https://www.invextarjetas.com.mx/invex/Documentos/Beneficios/Demora de Equipaje.pdf" target="_blank">Seguro por Demora de equipaje.</a><br /> <span
+												class="text-muted">Cobertura automática y gratuita de
+													seguro hasta un máximo de USD500 para reemplazar artículos
+													indispensables durante un viaje doméstico o internacional,
+													si la compañía de transporte demora en entregar su equipaje
+													o lo extravía temporalmente durante más de cuatro horas.
+													Tiene un plazo máximo de 30 días para notificar a Visa y
+													presentar el reclamo.</span></li>
+											<li><a href="https://www.invextarjetas.com.mx/invex/Documentos/Beneficios/Demora de Vuelo.pdf" target="_blank">Seguro por Demora de viaje.</a><br /> <span
+												class="text-muted">Cobertura automática y gratuita
+													hasta un máximo de USD100 por gastos razonables, tales como
+													comidas y alojamiento, si el viaje doméstico o internacional
+													cubierto se retrasa o interrumpe más de cuatro horas por
+													causa de un fallo, rotura repentina o imprevista del equipo
+													del medio de transporte, fenómenos climatológicos severos,
+													huelgas o desacuerdos de índole laboral. Tiene un plazo
+													máximo de 30 días para notificar a Visa y presentar el
+													reclamo.</span></li>
+											<li>Visa Travel Experience, Shopping Experience  y Wellness Experience</li>
+										</ul>
+										</p>
+										<p>
+											<span class="text-info"> Más información en <a
+												href="http://www.visa-platinum.com/mx/beneficios">www.visa-platinum.com/mx/beneficios</a>.<br/>
+												<br /><sup style="font-size: 11px; line-height: 0">(1)</sup>El Bono de bienvenida se depositará una vez que hayas acumulado compras con tu tarjeta por la cantidad de $2,150 pesos en los 3 primeros meses desde la activación de tu tarjeta y tendrás un año de vigencia a partir de la fecha en la que se te abona. Aplica para clientes nuevos.<br/>
+												<sup style="font-size: 11px; line-height: 0">(2)</sup> Aplica para clientes nuevos. Costo de la anualidad a partir del segundo año $3,300 pesos sin IVA.<br/>
+												<sup style="font-size: 11px; line-height: 0">(3)</sup> El dinero acumulado en tu monedero aplica para pago de tarifa aérea, servicios opcionales e impuestos y tienen una vigencia de dos a partir de la fecha en la que se te abona. No aplica para el pago de servicios tercerizados como: Shuttle, Hoteles, Actividades, Renta de Autos, Salón OMA VIP, Vía Asistencia, Cielito Limpio y Puente fronterizo CBX. Podrás ocuparlo cada vez que acumules $1,000 pesos.<br/>
+												<sup style="font-size: 11px; line-height: 0">(4)</sup> El 15% de bonificación se reflejará en su próximo estado de cuenta y está limitado a $150 pesos por tarjeta, por vuelo. El 15% de descuento solo aplica para tarjetas aprobadas y activadas, y para aquellos clientes que se encuentren al corriente con las obligaciones de pago.<br/>
+												<br><sup style="font-size: 11px; line-height: 0">(5)</sup> Para hacer extensivo los beneficios Viajando con Volaris , es necesario que al menos el 50% del total de la reservación sea pagada con la tarjeta Volaris INVEX 2.0
+												<br><sup style="font-size: 11px; line-height: 0">(6)</sup> Los 10 kg adicionales solo aplican sobre la primer maleta documentada. Aplica en vuelos internacionales , No aplican para infantes. Los beneficios de equipaje y prioridad en abordaje no aplican en vuelos de código compartido u otras alianzas que Volaris tenga con otra aerolínea. Considerando rutas nacionales e internacionales que cuenten con algún segmento de vuelo con esta característica siendo el itinerario completo no acreedor a dichos beneficios. 
+												<br><sup style="font-size: 11px; line-height: 0">(7)</sup> El equipaje de mano  se permite  un   peso máximo  de  10  Kg, con la Tarjeta de Crédito Volaris  INVEX 2.0  podrá llevar hasta 20 Kg en total  sin costo adicional, para mayor información descarga  <a href="https://www.invextarjetas.com.mx/invex/Documentos/Guias de Uso/Guia extendida - Volaris2.pdf" target="_blank">guía de uso</a>.
+												<br><sup style="font-size: 11px; line-height: 0">(8)</sup> El asiento regular aplica en la tarifa plus.
+												<br><sup style="font-size: 11px; line-height: 0">(9)</sup> Facturación anual para obtener el bono de aniversario: $25,000 pesos<br/>
+												<br><sup style="font-size: 11px; line-height: 0">(10)</sup> Sólo disponible en la Ciudad de México y Área Metropolitana. Servicio gratuito 3 veces al año reservando con 24 horas de anticipación en la página de <a href="http://www.visa-platinum.com/mx/visa-travel-experience" target="_blank">www.visa-platinum.com/mx/visa-travel-experience</a>.
+												<br>
+											</span>
+										</p>
+									</div>
+									<div class="tab-pane" id="three">
+										<h3 class="color">SOLICÍTALA AHORA</h3>
+										<p>
+											<strong>**Requisitos para contratar:</strong>
+										<ul>
+											<li>Edad entre 18 y 69 años 11 meses.</li>
+											<li>Antecedentes en Buró de Crédito.</li>
+											<li>Solicitud firmada por el cliente*.</li>
+											<li>Comprobante de Domicilio.</li>
+											<li>Identificación oficial actualizada.</li>
+											<li>Ingresos Mínimos $5,000.00 pesos.</li>
+										</ul>
+										</p>
+										<p>
+											<strong>¿Cómo la solicito?</strong>
+										<ol>
+											<li>Comunícate al siguiente teléfono: 4000-6566 en el
+												Distrito Federal o del interior, sin costo al 01 55
+												4000-6566.</li>
+											<li>Un ejecutivo solicitará tus datos.</li>
+											<li>Pedirá autorización para consultar Buró de Crédito.</li>
+											<li>Al aprobarse tu línea de crédito, un representante de
+												INVEX acudirá a tu domicilio y te pedirá: firmar la solicitud
+												de crédito prellenada. Copia de tu comprobante de domicilio e
+												identificación oficial. (Las cuales deberán coincidir con tus
+												originales). De estar correcta y completa tu documentación,
+												se te entregará: copia del contrato de crédito, de la
+												carátula y del anexo de comisiones.</li>
+											<li>Una vez cumplidos los requisitos anteriores se
+												entregará la tarjeta.</li>
+										</ol>
+										</p>
+										<p>
+											<span class="text-info"> * El otorgamiento de la
+												tarjeta está sujeto a aprobación de crédito. <br /> **
+												Contratación en Moneda Nacional.
+											</span>
+										</p>
+										<br />
+										<p>
+											<a href="https://www.invextarjetas.com.mx/invex/landings/Solicitala/invex-volaris/indexSolicitalaYaBlack.html" target="_blank">
+											<img
+												src="/resources/assets/img/tarjetas/btnred-solicitala.png"
+												class="img-responsive center-block">
+											</a>
+										</p>
+									</div>
+									<div class="tab-pane" id="four">
+										<!-- heading -->
+										<h3>CUOTAS Y COMISIONES</h3>
+										<hr />
+										<!-- Table -->
+										<div class="table-responsive">
+											<table class="table-hover">
+												<tr>
+													<th><h4>Concepto</h4></th>
+													<th><h4>Periodicidad de Cobro</h4></th>
+													<th><h4>Monto</h4></th>
+												</tr>
+												<tr ng-repeat="body in cuotas | limitTo:100:1">
+													<td>{{body.concepto}}</td>
+													<td>{{body.periodicidad}}</td>
+													<td>{{body.volaris_invex2}}</td>
+												</tr>
+											</table>
+										</div>
+										<br />
+										<hr>
+										<p>
+											A las cantidades anteriores se debe agregar el impuesto al
+											valor agregado. <br /> <br /> Moneda para compras
+											nacionales: pesos mexicanos. <br /> <br /> Moneda para
+											compras internacionales sujeta a tipo de cambio al día. <br />
+											<br /> <div compile="texto" style="font-size: 18px;">{{texto}} <br /><br /></div> <p>Te pedimos tener en consideración los siguientes puntos, según te apliquen de acuerdo al producto que contrataste con Banco INVEX, S.A., Institución de Banca Múltiple, Grupo Financiero. <br /> <br />
+											<strong>a)</strong> Al ser tu crédito de tasa variable, los
+											intereses pueden aumentar. <br /> <strong>b)</strong>
+											Incumplir tus obligaciones te puede generar comisiones e
+											intereses moratorios. <br /> <strong>c)</strong> Contratar créditos que excedan tu capacidad de pago afecta tu historial crediticio.
+											 <br /> <strong>d)</strong> Realizar sólo el pago mínimo aumenta el tiempo de pago y el costo de la deuda.
+											 <br /><br />Este contrato aplica para Volaris 2.0 , Volaris  2.0 Oro y Volaris 2.0 Clásica
+											 <br />*Aplica para Volaris 2.0 , Volaris 2.0 Oro y Clásica 2.0 
+											 <br />** Aplica solo por invitación
+											 
+										</p>
+										<br />
+										<p>
+											<a href="https://www.invextarjetas.com.mx/invex/Documentos/Contratos/ContratoUniversalTDC_INVEX.pdf" target="_blank">
+												<img
+													src="resources/assets/img/tarjetas/btnred-contrato.png"
+													class="img-responsive center-block">
+											</a>
+										</p>
+									</div>
+									<div class="tab-pane" id="five"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- UI twenty three end -->
+	
+		<!-- ########################### TAB DE TARJETA FIN ######################-->
+	</div>
+
+     <!-- HACK -->
+	<!-------------------------------------------------------------------->
+	
+
+
+	<!-- Foot Starts -->
+	<div class="foot">
+		<!-- Container -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<!-- Foot Item -->
+					<div class="foot-item">
+						<!-- Heading currenState href="#columna-footer1"-->
+						<img src="resources/assets/img/separador-foot.png" class="pull-right">
+						<p>
+							<a ng-href="{{getCurrenState('#columna-footer1')}}" data-toggle="collapse">
+								<strong>Sitios de Interés</strong>&nbsp;&nbsp;&nbsp;
+								<img src="resources/assets/img/arrow-down.png" style="padding-top: 5px;">
+							</a>
+						</p>
+						<p class="panel-collapse collapse" id="columna-footer1" style="line-height: 18px;">
+							<br /> <a href="https://www.invextarjetas.com.mx/invex/Documentos/Sitios de Interes/Aviso_legal.pdf" target="_blank">Aviso Legal</a>
+							<br /> <img src="resources/assets/img/separador-lineal.png"><br />
+							<a href="https://www.invextarjetas.com.mx/invex/Documentos/Sitios de Interes/AvisoPrivacidad.pdf" target="_blank">Aviso de privacidad</a>
+							<br /><img src="resources/assets/img/separador-lineal.png">
+							<br /><a href="https://www.invextarjetas.com.mx/invex/Documentos/Sitios de Interes/DatosACE.pdf" target="_blank">Directorio de Agencias
+							<br />de Recuperación</a>
+							<br /><img src="resources/assets/img/separador-lineal.png">
+							<br /><a ui-sref="contacto">Atención y Soporte</a>
+							<br /><img src="resources/assets/img/separador-lineal.png">
+							<br /><a href="https://www.invextarjetas.com.mx/invex/Documentos/Sitios de Interes/Consejos de Seguridad portal.pdf" target="_blank">Consejos de Seguridad</a>
+							<br /><img src="resources/assets/img/separador-lineal.png">
+							<br /><a href="https://www.invextarjetas.com.mx/invex/Documentos/Sitios de Interes/Preguntas_Frecuentes_INVEX.pdf">Preguntas Frecuentes</a>
+							<br /><img src="resources/assets/img/separador-lineal.png">
+							<br /><a href="https://www.invextarjetas.com.mx/invex/Documentos/Sitios de Interes/MapaSitioInvex.pdf">Mapa del Sitio</a>
+							<br /><img src="resources/assets/img/separador-lineal.png"><br />
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<!-- Foot Item -->
+					<div class="foot-item">
+						<!-- Heading href="#columna-footer2"-->
+						<img src="resources/assets/img/separador-foot.png" class="pull-right">
+						<p>
+							<a ng-href="{{getCurrenState('#columna-footer2')}}" data-toggle="collapse">
+								<strong>Centro de Atención</strong>&nbsp;&nbsp;&nbsp;
+								<img src="resources/assets/img/arrow-down.png" style="padding-top: 5px;">
+								<br /><strong>a Clientes</strong>
+							</a>
+						</p>
+						<p class="panel-collapse collapse" id="columna-footer2" style="line-height: 18px;">
+							<br />Ciudad de México
+							<br />y área metropolitana
+							<br /> <strong>4000 4000</strong>
+							<br /> <img src="resources/assets/img/separador-lineal.png">
+							<br />En el resto de la República
+							<br /><strong>01 55 4000 4000</strong>
+							<br /> <img src="resources/assets/img/separador-lineal.png">
+							<br />servicioaclientes@invex.com
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<!-- Foot Item -->
+					<div class="foot-item">
+						<!-- Heading -->
+						<img src="resources/assets/img/separador-foot.png" class="pull-right">
+						<p>
+							<a ng-href="{{getCurrenState('#columna-footer3')}}" data-toggle="collapse">
+								<strong>Centro de Atención</strong>&nbsp;&nbsp;&nbsp;
+								<img src="resources/assets/img/arrow-down.png" style="padding-top: 5px;">
+								<br /><strong>Telefónica CONDUSEF</strong>
+							</a>
+						</p>
+						<p class="panel-collapse collapse" id="columna-footer3" style="line-height: 18px;">
+							<br />Ciudad de México
+							<br />y área metropolitana
+							<br /><strong>5340 0999</strong>
+							<br /><img src="resources/assets/img/separador-lineal.png">
+							<br />En el resto de la República
+							<br /><strong>01 800 999 8080</strong>
+							<br /><img src="resources/assets/img/separador-lineal.png">
+							<br />asesoria@condusef.gob.mx
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<!-- Foot Item -->
+					<div class="foot-item">
+						<!-- Heading href="#columna-footer4"-->
+						<p>
+							<a ng-href="{{getCurrenState('#columna-footer4')}}" data-toggle="collapse">
+								<strong>Unidad Especializada de Atención</strong>&nbsp;&nbsp;&nbsp;
+								<img src="resources/assets/img/arrow-down.png" style="padding-top: 5px;">
+								<br /> <strong>a Usuarios INVEX</strong>
+							</a>
+						</p>
+						<p class="panel-collapse collapse" id="columna-footer4" style="line-height: 18px;">
+							<br /> Ciudad de México<br /> y área metropolitana
+							<br /> <strong>4000 4046</strong>
+							<br /> <img src="resources/assets/img/separador-lineal.png">
+							<br />Agricultura No. 21, Piso 1
+							<br /> Colonia Escandón C.P. 11800
+							<br /> Miguel Hidalgo, CDMX
+							<br />
+							<img src="resources/assets/img/separador-lineal.png">
+							<br /> uneap@invex.com
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Foot Ends -->
+
+	<!-- Footer Starts -->
+	<footer>
+    	<!-- Container -->
+    	<div class="container">
+      		<!-- Footer Content -->
+      		<!-- Paragraph -->
+      		<p class="pull-left">Banco INVEX, S.A., Institución de Banca Múltiple, INVEX Grupo Financiero.
+      			<br />Derechos Reservados © 2014, INVEX Controladora, S.A.B. de C.V.
+      		</p>
+      		<ul class="list-inline pull-right">
+        		<a href="http://www.invextarjetas.com.mx/" target="_blank">
+        			<img style="margin-bottom: 10px; max-width: 140px;" src="resources/assets/img/logo-invex2.png">
+        		</a>&nbsp;
+        		<a href="https://invex.com/buro" target="_blank">
+        			<img src="resources/assets/img/buro.png">
+        		</a>&nbsp;
+        		<a href="http://www.gob.mx/condusef" target="_blank">
+        			<img src="resources/assets/img/condusef.png">
+        		</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        		<a href="https://www.invextarjetas.com.mx/invex/Documentos/CONDUSEF/Cuotas.pdf" target="_blank">
+        			<img src="resources/assets/img/btn-comisiones.png">
+        		</a>
+      		</ul>
+      		<!-- Clearfix -->
+      		<div class="clearfix"></div>
+    	</div>
+  	</footer>
+	<!-- Footer Ends -->
+
+	<div class="portfolio-modal modal fade" id="portfolioModal4"
+		tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4"></div>
+				<div class=" col-md-4 login-box">
+					<div class="panel panel-default">
+						<div class="text-right close-chat" data-dismiss="modal">
+							<a><img src="resources/assets/img/chat/close.png"></a>
+						</div>
+						<div class="text-center header-chat">
+							<img
+								src="resources/assets/img/chat/acceso-usuario.png"
+								class="img-responsive center-block">
+						</div>
+						<div class="smart-forms text-center">
+							<div id="login-susarioModal" class="carousel slide" data-ride="carouselModal" style="width: auto; background: white;" data-interval="false">
+														<!-- <ol class="carousel-indicators">
+															<li data-target="login-susario" data-slide-to="0" class="active"></li>
+															<li data-target="login-susario" data-slide-to="1" class=""></li>
+														</ol> -->
+														<div class="carousel-inner">
+															<div class="item active" style="background-color: white;">
+																<div class="container" style="width: auto;color: white;">
+																	<form name="usuarioFase1" class="form" ng-submit="consultaUsuarioModal()" id="login">
+																		<div class="modal-body">
+																			<fieldset>
+																				<div class="row">
+																					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+																						<input type="password" placeholder="Usuario" required
+																							id="noCuentaModal" name="pwordModal" class="form-control" />
+																					</div>
+																				</div>
+																			</fieldset>
+																		</div>
+																		<div class="modal-footer" style="align: center">
+																				<button id="botonUsuario" type="submit" class="btn btn-color">Continuar</button>
+																				<br><br>
+																				<a ui-sref="recuperaUsuario">Recupera tu usuario</a> <br>
+																				<div class="activa">
+																					<a ui-sref="activaUsuario">ACTIVA TU REGISTRO</a>
+																				</div>
+
+																		</div>
+																		<div style="margin: 0 auto;" id="spinModalLogin"></div>
+																	</form>
+																</div>
+															</div>
+
+															<div class="item " style="background-color: white;">
+																<div class="container" style="width: auto;color: white;">
+																	<form id="login" role="form" ng-submit="login()">
+																		<div class="modal-body">
+																			<fieldset>
+																				<div class="row">
+																					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+																						<a style="color: rgb(171, 10, 60);">{{errorusuario}}</a>
+																						<h4>{{bienvenido.bienvenido}} <br>{{usuario.nombreP}}</h4>
+																						<h4>{{bienvenido.usuario}}<br>{{usuario.usuario}}</h4>
+																					</div>
+																				</div>
+																				<div class="row">
+																					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+																						<input ng-model="credentials.j_password"
+																							class="form-control" type="password" id="j_passwordModal"
+																							name="j_passwordl" placeholder="Contraseña" value="" required>
+																					</div>
+																				</div>
+																			</fieldset>
+																			<div class="row" style="margin-top: 15px;">
+																				<div class="section text-center">
+																					<p style="color: #9B0E11; list-style: none; display: block; margin-top: 5px; margin-bottom: 10px; font-size: large;"
+																						ng-show="loginError"></p>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="modal-footer">
+																			<button type="submit" class="btn btn-color" id="botonContinuarModal" >Continuar</button>
+																			<br><br>
+																			<a href="#login-susarioModal" roll="button" type="submit"
+																			data-target="#login-susarioModal" data-slide-to="0" onclick="regresaModal()">
+																				Cambiar de Usuario
+																			</a>
+																			<br><br>
+																			<a ui-sref="recuperaContrasenia">Recupera tu contraseña</a>
+
+																			<br>
+																			 <div class="activa">
+																				<a ui-sref="activaUsuario">ACTIVA TU REGISTRO</a>
+																			</div>
+																			<div style="margin: 0 auto;" id="spinModalLogin"></div>
+																			<script>
+																			function regresaModal() {
+																			    document.getElementById("noCuentaModal").value = "";
+																			}
+																			</script>
+																		</div>
+																	</form>
+																</div>
+															</div>
+														</div>
+													</div>
+
+
+
+						</div>
+					</div>
+					<div class="col-md-4"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Outer Ends -->
+
+	<!-- Scroll to top -->
+	<span class="totop"><a href="#"><i
+			class="fa fa-angle-up bg-color"></i></a></span>
+
+	<script
+		src="resources/js/plugins/MaskedPassword.js"></script>
+
+	<!-- AngularJS -->
+	<script
+		src="resources/js/plugins/angular/angular.min.js"></script>
+	<script
+		src="resources/js/plugins/angular/angular-touch.min.js"></script>
+	<script
+		src="resources/js/plugins/angular/angular-route.min.js"></script>
+	<script
+		src="resources/js/plugins/angular/angular-animate.min.js"></script>
+	<script
+		src="resources/js/plugins/ui-router/angular-ui-router.js"></script>
+
+	<script
+		src="resources/js/app/config/app-config.js"></script>
+	<script
+		src="resources/js/app/factories/app-factory.js"></script>
+	<script
+		src="resources/js/app/controllers/index-controller.js"></script>
+	<script
+		src="resources/js/app/controllers/home-controller.js"></script>
+
+	<script
+		src="resources/js/app/controllers/activaCuenta-controller.js"></script>
+	<script
+		src="resources/js/app/controllers/contact-controller.js"></script>
+	<script
+		src="resources/js/app/controllers/visa-controller.js"></script>
+	<script
+		src="resources/js/app/controllers/resetPassword-controller.js"></script>
+	<script
+		src="resources/js/app/controllers/recoverUser-controller.js"></script>
+	<script
+		src="resources/js/app/controllers/tarjetas-controller.js"></script>
+	<script
+		src="resources/js/app/controllers/msi-controller.js"></script>
+	<script
+		src="resources/js/app/controllers/indigo-controller.js"></script>
+
+	<!-- jQuery -->
+	<script
+		src="resources/js/plugins/jquery.js"></script>
+	<script
+		src="resources/js/plugins/bootstrap.min.js"></script>
+
+	<!-- Magnific Popup -->
+	<script
+		src="resources/js/plugins/jquery.magnific-popup.min.js"></script>
+	<script
+		src="resources/js/plugins/owl.carousel.min.js"></script>
+	<script
+		src="resources/js/plugins/main.js"></script>
+	<script
+		src="resources/js/plugins/spin.js"></script>
+	<!-- Promise -->
+	<script
+		src="resources/js/plugins/es6-promise.js"></script>
+	<!-- Axios -->
+	<script
+		src="resources/js/plugins/axios.min.js"></script>
+</body>
+</html>
