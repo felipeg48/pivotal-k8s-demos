@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: invex-tarjetas
+spec:
+  ports:
+  - port: 80
+  selector:
+    app: invex-tarjetas
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: invex-tarjetas
+  labels:
+    app: invex-tarjetas
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: invex-tarjetas
+  template:
+    metadata:
+      labels:
+        app: invex-tarjetas
+    spec:
+      containers:
+      - name: invex-tarjetas
+        image: harbor.haas-230.pez.pivotal.io/demo/invex-tarjetas
+        ports:
+        - containerPort: 80

@@ -3,12 +3,11 @@ kind: Pod
 metadata:
   name: invex-tarjetas
   labels:
-    name: invex-tarjetas
+    app: invex-tarjetas
 spec:
   containers:
-  - name: invex-tarjetas
-    image: harbor.haas-230.pez.pivotal.io/demo/invex-tarjetas
-    ports:
-      - containerPort: 8080
-  nodeSelector:
-    app: invex-tarjetas
+    - name: invex-tarjetas
+      image: harbor.haas-230.pez.pivotal.io/demo/invex-tarjetas
+      imagePullPolicy: Always
+      ports:
+        - containerPort: 80
