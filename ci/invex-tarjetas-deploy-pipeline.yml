@@ -1,0 +1,54 @@
+resource_types:
+- name: kubernetes
+  type: docker-image
+  source:
+    repository: zlabjp/kubernetes-resource
+    tag: "1.14"
+
+resources:
+- name: kubernetes-demo
+  type: kubernetes
+  source:
+    server: https://demo.haas-230.pez.pivotal.io:8443
+    namespace: default
+    token: {{kubernetes-demo-token}}
+    insecure_skip_tls_verify: true
+
+- name: git-invex-tarjetas
+  type: git
+  source:
+     uri: https://github.com/felipeg48/pivotal-k8s-demos.git
+
+- name: docker-invex-tarjetas
+  type: docker-image
+  source:
+    username: {{harbor-demo-user}}
+    password: {{harbor-demo-password}}
+    repository: harbor.haas-230.pez.pivotal.io:443/demo/invex-tarjetas
+    tag: v1.0.0
+    ca_certs:
+    - domain: harbor.haas-230.pez.pivotal.io:443
+      cert: {{harbor-demo-cert}}
+
+jobs:
+- name: invex-tarjetas
+  public: true
+  serial: true
+  plan:
+  - get: git-invex-tarjetas
+    trigger: true
+  - put: docker-invex-tarjetas
+    params:
+      build: git-invex-tarjetas/
+
+- name: kubernetes-invex-tarjetas-deploy
+  public: true
+  serial: true
+  plan:
+  - get: git-invex-tarjetas
+    passed: [invex-tarjetas]
+    trigger: false
+  - put: kubernetes-demo
+    params:
+      kubectl: apply -f git-invex-tarjetas/k8s/invex-tarjetas-deployment.yml
+      wait_until_ready_selector: app=invex-tarjetas

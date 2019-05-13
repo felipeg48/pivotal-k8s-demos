@@ -1,0 +1,66 @@
+---
+resources:
+- name: git-todo-client
+  type: git
+  source:
+    uri: https://github.com/felipeg48/todo-client.git
+    branch: master
+
+
+jobs:
+- name: test
+  public: true
+  plan:
+  - get: git-todo-client
+    
+  - task: test
+    config:
+      platform: linux
+      inputs:
+      - name: git-todo-client
+        path: code
+      outputs:
+      - name: distribution
+
+      image_resource:
+        type: docker-image
+        source:
+          repository: node
+          tag: 'alpine'
+      run:
+        path: sh
+        args:
+          - -exec
+          - |
+            pwd
+            ls -lrt
+            cd code
+            npm install yarn
+            yarn install
+            yarn build
+            cp -r dist Dockerfile ../distribution
+            cd ../distribution
+            ls -lrt
+  - task: next
+    config:
+      platform: linux
+      inputs:
+        - name: distribution
+    
+      image_resource:
+        type: docker-image
+        source:
+          repository: node
+          tag: 'alpine'
+      run:
+        path: sh
+        args:
+          - -exec
+          - |
+            pwd
+            ls -lrt
+            cd distribution
+            ls -lrt dist
+            cat Dockerfile
+
+
