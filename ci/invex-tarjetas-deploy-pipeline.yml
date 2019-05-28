@@ -25,7 +25,7 @@ resources:
     username: {{harbor-demo-user}}
     password: {{harbor-demo-password}}
     repository: harbor.haas-230.pez.pivotal.io:443/demo/invex-tarjetas
-    tag: v1.0.0
+    tag: v2.0.0
     ca_certs:
     - domain: harbor.haas-230.pez.pivotal.io:443
       cert: {{harbor-demo-cert}}
