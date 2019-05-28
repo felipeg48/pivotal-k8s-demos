@@ -4,7 +4,7 @@ metadata:
   name: invex-tarjetas
   labels:
     app: invex-tarjetas
-    version: v1.0.0
+    version: v2.0.0
 spec:
   replicas: 3
   selector:
@@ -14,10 +14,10 @@ spec:
     metadata:
       labels:
         app: invex-tarjetas
-        version: v1.0.0
+        version: v2.0.0
     spec:
       containers:
       - name: invex-tarjetas
-        image: harbor.haas-230.pez.pivotal.io/demo/invex-tarjetas:v1.0.0
+        image: harbor.haas-230.pez.pivotal.io/demo/invex-tarjetas:v2.0.0
         ports:
         - containerPort: 80
